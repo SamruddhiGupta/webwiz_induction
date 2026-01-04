@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+
+    <title>Photography Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Final.css">
+    
+    
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="menu">
+        <img class="m" src="hamburger-menu.svg" alt="menu">
+        <div class="tooltip">Menu</div>
+      </div>
+      <div class="title">
+          <h1>PHOTOGRAPHY</h1>
+          <h2>Portfolio</h2>
+      </div>
+      <div class="logo">
+        <img class="l" src="logo (2).png" alt="logo">
+      </div>
+    </div>
+
+    
+
+  <div class="flex">
+
+    <div class="box1">
+      <div class="badge">Artist's Choice</div>
+      <h3>MACRO PHOTOGRAPHY</h3>
+      <img class="img1" src="photo1.jfif">
+      <p class="des">Macro photography is all about showcasing a subject larger than it is in real life.</p>
+      <button class="button" id="button.macro"> View Gallery </button>
+    </div>
+
+    <div class="box1">
+      <h3>ARCHITECTURAL PHOTOGRAPHY</h3>
+      <img class="img1" src="photo3.webp">
+      <p class="des">Capturing photographs of buildings and similar architectural structures.</p>
+      <button class="button" id="button.architectural"> View Gallery </button>
+    </div>
+
+    <div class="box1">
+      <h3>WILDLIFE PHOTOGRAPHY</h3>
+      <img class="img1" src="photo2.jfif">
+      <p class="des">The art of capturing animals in their natural habitat and behaviors.</p>
+      <button class="button" id="button.wildlife"> View Gallery </button>
+    </div>
+
+    <div class="box1">
+      <h3>NATURE PHOTOGRAPHY</h3>
+      <img class="img1" src="photo4.jpeg">
+      <p class="des">Devoted to displaying natural elements such as landscapes and plants.</p>
+      <button class="button" id="button.nature"> View Gallery </button>
+    </div>
+
+    <div class="box1">
+      <div class="badge">Best Seller</div>
+      <h3>MONOCHROME PHOTOGRAPHY</h3>
+      <img class="img1" src="photo5.jpeg">
+      <p class="des">Capturing images using only varying tones & shades of a single color.</p>
+      <button class="button" id="button.monochrome"> View Gallery </button>
+    </div>
+
+    <div class="box1">
+      <h3>FOOD PHOTOGRAPHY</h3>
+      <img class="img1" src="photo6.jpeg">
+      <p class="des">An art that combines technique and creativity to capture the beauty of dishes.</p>
+      <button class="button" id="button.food"> View Gallery </button>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p class="foot">SAMRUDDHI GUPTA</p>
+    <br> <br>
+    <p class="foot">CONTACTS-</p>
+    <p class="foot">+91 9892377455</p>
+    <br> <br>
+    <p class="foot">EMAIL</p>
+    <p class="foot">8g16samruddhigupta@gmail.com</p>
+  </div>
+
+  <script src="Final.js">
+  </script>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search[1] === "/") {
+        var decoded = l.search
+          .slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  </script>
+  </body>
+</html>

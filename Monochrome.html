@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MONOCHROME PHOTOGRAPHY</title>
+    <link rel="icon" href="data:,">
+    <style>
+        .des {
+            display: none; 
+            margin: 10px 0;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="title">
+          <h1 >M O N O C H R O M E </h1>
+          <h2 >photography</h2>
+      </div>
+      <div class="logo">
+        <img class="l" src="logo (2).png" alt="logo">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="flex">
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Monochrome/pexels-adrien-olichon-1257089-2823456.jpg">
+    <p class="des">Aspect Ratio= 2:3 <br>Black point- Very High <br>Shadows-76%</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Monochrome/pexels-jose-leandro-2150768347-35450942.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Black point- High Contrast<br>Shadows-32%</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Monochrome/pexels-lensking-426015180-35473021.jpg">
+    <p class="des">Aspect Ratio= 4:5 <br>Black point- Absolute <br>Shadows- 88% </p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Monochrome/pexels-palefire-35450888.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Black point- Abstracted <br>Shadows-50%</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Monochrome/pexels-ratul-khan-2151570030-35462562.jpg">
+    <p class="des">Aspect Ratio= 16:9 <br>Black point- Moderate <br>Shadows-14%</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Monochrome/pexels-steve-130217-759550.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Black point- Absolute <br>Shadows-65%</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+  </div>
+  <script>
+        function hideshow(btn) {
+            
+            const parent = btn.parentElement;
+            
+            
+            const description = parent.querySelector(".des");
+
+            
+            if (description.style.display === "block") {
+                description.style.display = "none";
+                btn.innerText = "Click to view Image Details";
+            } else {
+                description.style.display = "block";
+                btn.innerText = "Hide Details";
+            }
+        }
+    </script>
+  </body>
+</html>

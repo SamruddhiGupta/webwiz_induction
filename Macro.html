@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MACRO PHOTOGRAPHY</title>
+    <link rel="icon" href="data:,">
+    <style>
+        .des {
+            display: none; 
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>M A C R O</h1>
+            <h2>photography</h2>
+        </div>
+        <div class="logo">
+            <img class="l" src="logo (2).png" alt="logo">
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="flex">
+        <div class="box1">
+            <img class="img1" src="Stock Images Macro/pexels-inspiredimages-132477.jpg">
+            <p class="des">Aspect Ratio= 3:2 <br> Focus- Soft <br> ISO- Low (100-200)</p>
+            <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+        </div>
+
+        <div class="box1">
+            <img class="img1" src="Stock Images Macro/pexels-leonardo-jarro-204864-633437.jpg">
+            <p class="des">Aspect Ratio= 3:2 <br> Focus- Selective <br> ISO- Low (200-400).</p>
+            <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+        </div>
+
+        <div class="box1">
+            <img class="img1" src="Stock Images Macro/pexels-pixabay-158725.jpg">
+            <p class="des">Aspect Ratio= 3:2 <br> Focus- Sharp point <br> ISO- Low (100-200).</p>
+            <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+        </div>
+
+        <div class="box1">
+            <img class="img1" src="Stock Images Macro/pexels-victorfreitas-865711.jpg">
+            <p class="des">Aspect Ratio= 3:2 <br> Focus- Centre Sarp <br> ISO- Medium (400-800).</p>
+            <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+        </div>
+
+        <div class="box1">
+            <img class="img1" src="Stock Images Macro/pexels-poranimm-athithawatthee-284222-842401.jpg">
+            <p class="des">Aspect Ratio= 3:2 <br> Focus- Deep <br> ISO- Medium (400-800)</p>
+            <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+        </div>
+
+        <div class="box1">
+            <img class="img1" src="Stock Images Macro/pexels-teckhengwang-131618.jpg">
+            <p class="des">Aspect Ratio= 3:2 <br> Focus- Extreme Macro <br> ISO- Low (100-400)</p>
+            <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+        </div>
+    </div>
+
+    <script>
+        function hideshow(btn) {
+            
+            const parent = btn.parentElement;
+            
+            
+            const description = parent.querySelector(".des");
+
+            
+            if (description.style.display === "block") {
+                description.style.display = "none";
+                btn.innerText = "Click to view Image Details";
+            } else {
+                description.style.display = "block";
+                btn.innerText = "Hide Details";
+            }
+        }
+    </script>
+</body>
+</html>

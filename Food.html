@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>FOOD PHOTOGRAPHY</title>
+    <link rel="icon" href="data:,">
+    <style>
+        .des {
+            display: none; 
+            margin: 10px 0;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="title">
+          <h1 >F   O   O   D </h1>
+          <h2 >photography</h2>
+      </div>
+      <div class="logo">
+        <img class="l" src="logo (2).png" alt="logo">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="flex">
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Food/pexels-chanwalrus-958545.jpg">
+    <p class="des">Aspect Ratio= 16:9 <br>Focal Length- 35mm <br>Aperture- f/4</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Food/pexels-ella-olsson-572949-1640773.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Focal Length- 50mm <br>Aperture- f/8</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Food/pexels-foodie-factor-162291-566566.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Focal Length- 85mm <br>Aperture- f/3.5</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Food/pexels-janetrangdoan-1128678.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Focal Length- 35mm <br>Aperture- f/5.6</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Food/pexels-marta-dzedyshko-1042863-2067396.jpg">
+    <p class="des">Aspect Ratio= 2:3<br>Focal Length- 50mm <br>Aperture- f/2.2</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Food/pexels-valeriya-1639565.jpg">
+    <p class="des">Aspect Ratio= :2 <br>Focal Length- 50mm <br>Aperture- f/2.8</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+  </div>
+  <script>
+        function hideshow(btn) {
+            
+            const parent = btn.parentElement;
+            
+            
+            const description = parent.querySelector(".des");
+
+            
+            if (description.style.display === "block") {
+                description.style.display = "none";
+                btn.innerText = "Click to view Image Details";
+            } else {
+                description.style.display = "block";
+                btn.innerText = "Hide Details";
+            }
+        }
+    </script>
+  </body>
+</html>

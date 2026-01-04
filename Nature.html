@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>NATURE PHOTOGRAPHY</title>
+    <link rel="icon" href="data:,">
+    <style>
+        .des {
+            display: none; 
+            margin: 10px 0;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="title">
+          <h1 >N  A  T  U  R  E </h1>
+          <h2 >photography</h2>
+      </div>
+      <div class="logo">
+        <img class="l" src="logo (2).png" alt="logo">
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="flex">
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Nature/pexels-chiecharon-722629.jpg">
+    <p class="des">Aspect Ratio= 2:3 <br>Shutter- slow <br>Proportion- Vertical Framing</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Nature/pexels-eberhardgross-534164.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Lens- 24mm <br>Proportion- Rule of Thirds</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Nature/pexels-eliannedipp-4666748.jpg">
+    <p class="des">Aspect Ratio= 2:3 <br>Special effect- Snell's Window <br>Proportion- Negative Space</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Nature/pexels-manuela-adler-344311-949194.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>Shutter- fast <br>Proportion- Low Angle Perspective</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Nature/pexels-olenkabohovyk-5345029.jpg">
+    <p class="des">Aspect Ratio= 9:16 <br>Special Effect- Rhythmic pattern <br>Proportion- Central Perspective</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Nature/pexels-trvlust-5409751.jpg">
+    <p class="des">Aspect Ratio= 3:2 <br>White Balance- warm color <br>Proportion- Layered Landscape</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+  </div>
+  <script>
+        function hideshow(btn) {
+            
+            const parent = btn.parentElement;
+            
+            
+            const description = parent.querySelector(".des");
+
+            
+            if (description.style.display === "block") {
+                description.style.display = "none";
+                btn.innerText = "Click to view Image Details";
+            } else {
+                description.style.display = "block";
+                btn.innerText = "Hide Details";
+            }
+        }
+    </script>
+  </body>
+</html>

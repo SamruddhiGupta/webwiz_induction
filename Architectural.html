@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>ARCHITECTURAL PHOTOGRAPHY</title>
+    <link rel="icon" href="data:,">
+    <style>
+        .des {
+            display: none; 
+            margin: 10px 0;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="title">
+          <h1 >ARCHITECTURAL</h1>
+          <h2 >photography</h2>
+      </div>
+      <div class="logo">
+        <img class="l" src="logo (2).png" alt="logo">
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="flex">
+    <div class="box1">
+    <img class="img1" src="Stock Images Arch/pexels-chiara-holzhauser-2157516733-35459349.jpg">
+    <p class="des">Aspect Ratio= 3:4 <br> Depth- Deep <br>Lighting- Civil Twilight</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Arch/pexels-irfansimsar-29356289.jpg">
+    <p class="des">Aspect Ratio= 4:5 <br> Depth- Selective/Compressed <br> Lighting- High-Sun Afternoon</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Arch/pexels-ksu-eli-studio-78564297-8680936.jpg">
+    <p class="des">Aspect Ratio= 3:4 <br> Depth- Deep <br> Lighting- Direct Hard Sunlight</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Arch/pexels-simon-s-574087187-30077141.jpg">
+    <p class="des">Aspect Ratio= 4:3 <br>Depth- Deep <br>Lighting- Golden Hour</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Arch/pexels-streetuha-30207943.jpg">
+    <p class="des">Aspect Ratio= 2:3 <br>Depth- Deep <br>Lighting- Flat</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    <div class="box1">
+    <img class="img1" src="Stock Images Arch/pexels-yajun-dong-50968307-32166639.jpg">
+    <p class="des">Aspect Ratio= 2:3 <br>Depth- Deep <br>Lighting- Overcast/Diffused</p>
+    <button class="button2" onclick="hideshow(this)">Click to view Image Details</button>
+    </div>
+
+    </div>
+    <script>
+        function hideshow(btn) {
+            
+            const parent = btn.parentElement;
+            
+            
+            const description = parent.querySelector(".des");
+
+            
+            if (description.style.display === "block") {
+                description.style.display = "none";
+                btn.innerText = "Click to view Image Details";
+            } else {
+                description.style.display = "block";
+                btn.innerText = "Hide Details";
+            }
+        }
+    </script>
+  </body>
+</html>
